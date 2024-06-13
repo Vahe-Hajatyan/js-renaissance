@@ -5,7 +5,7 @@ import Song from "./Song";
 import SongList from "./SongList";
 import PlayList from "./PlayList";
 
-function App() {
+const App = () => {
   const [playList, setPlayList] = useState([]);
   const [songs, setSong] = useState([
     {
@@ -30,11 +30,6 @@ function App() {
   return (
     <>
       <h1>hello props</h1>
-      {/* <Album name="album1" year={1999}>
-        <Song name="song1" artist="artist1" />
-        <Song name="song2" artist="artist2" duraction={8} />
-        <Song name="song3" artist="artist3" duraction={5} />
-      </Album> */}
       <SongList
         items={songs}
         setItems={setSong}

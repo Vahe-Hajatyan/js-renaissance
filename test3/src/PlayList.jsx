@@ -1,6 +1,6 @@
 import Song from "./Song";
 
-function PlayList({ playList }) {
+const PlayList = ({ playList }) => {
   return (
     <>
       <h1>songs {playList.length}</h1>

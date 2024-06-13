@@ -1,6 +1,6 @@
 import Song from "./Song";
 
-function SongList({ items, setItems, setPlayList, playList }) {
+const SongList = ({ items, setItems, setPlayList, playList }) => {
   return (
     <>
       <h3>song list</h3>

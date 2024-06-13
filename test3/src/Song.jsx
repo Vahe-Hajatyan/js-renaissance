@@ -1,5 +1,5 @@
-function Song(props) {
-  function deleteSong() {
+const Song = (props) => {
+  const deleteSong = () => {
     if (props.inPlaylist) {
       props.setPlayList((items) =>
         items.filter((item) => item.id !== props.id)
@@ -8,7 +8,7 @@ function Song(props) {
       props.setItems((items) => items.filter((item) => item.id !== props.id));
     }
   }
-  function moveSong() {
+  const moveSong = ()=> {
     let findItem = props.playList.some((item) => item.id === props.id);
     if (!findItem) {
       props.setPlayList((items) => {
